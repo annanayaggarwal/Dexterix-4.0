@@ -21,7 +21,7 @@ app.use(surveyRoutes);
 // app.use(AppointmentRoutes);
 const startServer = async () => {
   mongoose.connect(
-    "mongodb+srv://nasa-api:6ybvrxwT4vmnuCkV@cluster0.pdd585k.mongodb.net/happy2help2",
+    "mongodb+srv://anniagg2003:annanay@cluster0.81ccs6o.mongodb.net/",
     {}
   );
 
