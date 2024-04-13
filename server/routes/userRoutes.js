@@ -9,13 +9,6 @@ const Doctor = require("../models/doctorModal");
 
 router.post("/register", async (req, res) => {
   try {
-    // if (!req.body.email || !req.body.password || !req.body.role) {
-    //   res.status(400).send({
-    //     success: false,
-    //     message: "Invalid Parameters",
-    //   });
-    // }
-    // console.log(req.body);
     const user = await User.findOne({
       email: req.body.email,
     });
@@ -112,7 +105,6 @@ router.post("/login", async (req, res) => {
 });
 
 //Verify Token
-
 router.post("/verifytoken", async (req, res) => {
   try {
     const user = jwt.verify(req.body.token, "helloworld");
